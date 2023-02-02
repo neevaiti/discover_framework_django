@@ -1,0 +1,12 @@
+{% extends 'mentorat/base.html' %}
+
+    {% block body %}
+        <h1>Bonjour, vous êtes sur <strong>Django</strong>.</h1>
+
+            {% for users in utilisateurs%}
+                <p>
+                    {{ users.name }}
+                </p>
+            {% endfor %}
+
+    {% endblock %}
